@@ -16,7 +16,9 @@ body{
     color: white;
     padding-left: 10px;
 }
-
+.searchsymbol{
+    display: none;
+}
 .search{
     color:white;
     padding: 6px ;
@@ -70,29 +72,60 @@ a:link {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:75vh;
+    height:80vh;
     
 }
 .sub{
-    padding: 6vh;
+    text-align: center;
 }
 .sub1{
-    padding-bottom:6vh;
-}
+    padding: 10vh;
+    text-align: center;
+    }
 .button{
     color:black;
     padding: 15px ;
     border-radius: 30px;
     border: none;
-}
+    transition: background-color 0.3s, color 0.3s;
+}  
 .buttom{
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 button:hover{
     color:white;
     background:#153B3B ;
     padding:20px;
-}
+    transform: scale(1.1); /* Added a scale transform on hover */
 
+}
+#icon{
+display: none;
+}
+        @media (max-width:590px){    
+            img{
+                width:30px;
+                height: 30px;
+            }
+           .sub{
+            text-align: center;
+            font-size: 25px;
+           }  
+           nav{
+            display:flex;
+            flex-direction: column;
+            align-items:flex-start;
+           }
+           a{
+            display:none;
+           }
+           .search{
+            display: none;
+           }
+          #icon{
+            display: block;
+          }
+        } 
